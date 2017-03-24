@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const compress = require('compression');
 const methodOverride = require('method-override');
 const cors = require('cors');
-
+const path = require('path')
 
 module.exports = function (app, config) {
     const env = process.env.NODE_ENV || 'development';
