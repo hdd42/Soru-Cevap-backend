@@ -29,7 +29,7 @@ const config = {
     app: {
       name: 'Ogrenci Yonetim Sistemi Prod'
     },
-    port: process.env.PORT || 80,
+    port: process.env.PORT || 3000,
     db:'mongodb://localhost/sorucevap-sistemi-dev',
     tokenSecret: 'prod-token-secret'
   }

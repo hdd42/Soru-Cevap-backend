@@ -38,19 +38,22 @@ module.exports = function (app, config) {
         })
     }
       */
-   
+
     const controllers = glob.sync(config.root + '/controllers/*.js');
-    
+
     controllers.forEach(function (controller) {
         require(controller)(app);
     });
     //
-    app.use(function (req, res, next) {
+    app.use('/api/*', function (req, res, next) {
         const err = new Error('Not Found');
         err.status = 404;
         next(err);
     });
 
+    app.use('*', (req, res, next) => {
+        res.sendFile(path.join(__dirname + '/public/index.html'));
+    })
     if (app.get('env') === 'development') {
 
         app.use(function (err, req, res, next) {
