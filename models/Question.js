@@ -85,6 +85,7 @@ QuestionSchema.statics.FindAllAndCount = function ({ query, select = ["createdAt
                         path: 'user',
                         select: 'name'
                     })
+                    .populate('solved.user')
                     .populate({ path: 'categories', select: 'name slug' }),
                 this.find(finalQuery).count()
             ])

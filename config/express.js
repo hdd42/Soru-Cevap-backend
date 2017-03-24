@@ -51,9 +51,9 @@ module.exports = function (app, config) {
         next(err);
     });
 
-    app.use('*', (req, res, next) => {
+  /*  app.use('*', (req, res, next) => {
         res.sendFile(path.join(config.root + '/public/index.html'));
-    })
+    })*/
     if (app.get('env') === 'development') {
 
         app.use(function (err, req, res, next) {

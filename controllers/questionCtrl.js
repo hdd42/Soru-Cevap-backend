@@ -39,7 +39,11 @@ class StudentCtrl extends MainCtrl {
 
     async  findBySlug(req, res, next) {
         let slug = req.params.slug;
-        let question = await Question.findOne({ slug }).populate('categories').populate('user')
+        let question = await Question.findOne({ slug })
+        .populate('categories')
+        .populate('user')
+        .populate('answers.user')
+        .populate('solved.user')
         res.status(200).json({ success: 1, message: question })
     }
 
@@ -48,9 +52,11 @@ class StudentCtrl extends MainCtrl {
     }
     async  addAnswer(req, res, next) {
         let id = req.params.id;
+         req.body.user = req.user._id
         let question = await Question.findByIdAndUpdate(id, { $push: { answers: req.body } }, { new: true })
         if (!question) return res.status(404).json({ success: 0, message: `Bu id {${id}} ile eslesen soru bulunamadi!` })
-        res.send({ success: 1, answers: question.answers })
+    
+        res.send({ success: 1, message:question.answers })
     }
 
     async  findAnswers(req, res, next) {
