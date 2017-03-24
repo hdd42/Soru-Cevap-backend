@@ -30,7 +30,7 @@ const config = {
       name: 'Ogrenci Yonetim Sistemi Prod'
     },
     port: process.env.PORT || 80,
-    db:`mongodb://javaci:Abcd_1234@ds137540.mlab.com:37540/soru-cevap`,
+    db:'mongodb://localhost/sorucevap-sistemi-dev',
     tokenSecret: 'prod-token-secret'
   }
 };
