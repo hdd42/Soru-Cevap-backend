@@ -1,5 +1,5 @@
 const express = require('express')
-const MainCtrl = require('../lib/MainCtrl')
+const MainCtrl = require('../lib/mainCtrl')
 const mongoose = require('mongoose')
 const Question = mongoose.model('Question');
 const Category = mongoose.model('Category');
