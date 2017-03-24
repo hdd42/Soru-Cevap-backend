@@ -52,7 +52,7 @@ module.exports = function (app, config) {
     });
 
     app.use('*', (req, res, next) => {
-        res.sendFile(path.join(__dirname + '/public/index.html'));
+        res.sendFile(path.join(config.root + '/public/index.html'));
     })
     if (app.get('env') === 'development') {
 
