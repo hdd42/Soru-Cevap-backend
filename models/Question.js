@@ -34,7 +34,8 @@ const QuestionSchema = new mongoose.Schema({
     votesCount:{
         total:{type:Number , default:0},
         upVote:{type:Number , default:0},
-        downVote:{type:Number, default:0}
+        downVote:{type:Number, default:0},
+        voters:[ { type: ObjectId, ref: 'User' }]
     },
     slug:{type:String, unique:true},
     //teachers: [{ type: ObjectId, ref: 'User' }],

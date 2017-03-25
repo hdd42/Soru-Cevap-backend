@@ -58,8 +58,8 @@ class AnswerCtrl extends MainCtrl {
             'answers._id': id
         }, {
                 $set: {
-                    'solved.status':true,
-                    'solved.user':req.user._id,
+                    'solved.status': true,
+                    'solved.user': req.user._id,
                     solvedMark: true,
                     "answers.$.solverMark": true,
                     "answers.$.user": req.user._id,
@@ -67,6 +67,49 @@ class AnswerCtrl extends MainCtrl {
                 }
             }, { new: true })
         res.status(200).json({ success: 1, question })
+    }
+
+    async vote(req, res, next) {
+        let id = req.params.id;
+        let upOrDown = req.body.vote;
+        let userId = req.user._id
+        let query = '';
+        if (upOrDown == 'up') {
+            query = 'positiveCount';
+        } else {
+            query = 'negativeCount'
+        }
+
+        let question = await Question.findOne({
+            'answers._id': id
+        })
+        let voting = false;
+        for (let a of question.answers) {
+            if (a._id == id) {
+                if (a.voters.indexOf(userId) < 0) {
+                    a.voters.push(userId)
+                    a[query] = a[query] + 1
+                    voting = true;
+                    break;
+                } else {
+                    return res.status(200).send({ success: 0, message: `yanliz bir kere oy kullanabilirsiniz!` })
+                }
+            }
+        }
+        if (voting) {
+            await question.save()
+            return res.status(200).send({ success: 1, voted: upOrDown })
+        }
+        res.status(404).json({success:0 , message:'cevap bulunamadi!'})
+        /*    let answer = await Question
+                .findOneAndUpdate({
+                    'answers._id': id,
+                    'answers.voters': { $nin: [userId] }
+                }, {
+                    $inc: query,
+                    $push: { 'answers.$.voters': userId }
+                })*/
+
     }
 
 }
@@ -81,7 +124,7 @@ router.route("/*")
     .put(Auth.ensureAuth(['Admin', 'Member']))
     .post(Auth.ensureAuth(['Admin', 'Member']))
     .delete(Auth.ensureAuth(['Admin', 'Member']))
-
+//api/answers/58d5e29d7a0dd43d0c85efb8/vote
 router.route("/")
     .get(ctrl.errorHandler(ctrl.index))
     .post(ctrl.errorHandler(ctrl.create))
@@ -89,6 +132,12 @@ router.route("/")
     .all(ctrl.errorHandler(ctrl.notAllowed));
 router.route("/:id/solved")
     .put(ctrl.errorHandler(ctrl.questionSolved))
+    .post(ctrl.errorHandler(ctrl.create))
+    //.post(ctrl.checkReq({ check: true, action: 'create' }), ctrl.errorHandler(ctrl.create))
+    .all(ctrl.errorHandler(ctrl.notAllowed));
+
+router.route("/:id/vote")
+    .put(ctrl.errorHandler(ctrl.vote))
     .post(ctrl.errorHandler(ctrl.create))
     //.post(ctrl.checkReq({ check: true, action: 'create' }), ctrl.errorHandler(ctrl.create))
     .all(ctrl.errorHandler(ctrl.notAllowed));

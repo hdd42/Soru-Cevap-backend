@@ -54,6 +54,7 @@ class StudentCtrl extends MainCtrl {
         let id = req.params.id;
          req.body.user = req.user._id
         let question = await Question.findByIdAndUpdate(id, { $push: { answers: req.body } }, { new: true })
+        .populate('answers.user')
         if (!question) return res.status(404).json({ success: 0, message: `Bu id {${id}} ile eslesen soru bulunamadi!` })
     
         res.send({ success: 1, message:question.answers })
@@ -69,6 +70,7 @@ class StudentCtrl extends MainCtrl {
     async  vote(req, res, next) {
         let id = req.params.id;
         let upOrDown = req.body.vote;
+        let userId= req.user._id
         let query = {
             'votesCount.total': 1
         }
@@ -78,11 +80,18 @@ class StudentCtrl extends MainCtrl {
             query['votesCount.downVote'] = 1;
         }
 
-        let question = await Question.findByIdAndUpdate(id, {
-            $inc: query
+        let question = await Question
+        .findOneAndUpdate({
+            _id:id,
+            'votesCount.voters': { $nin: [userId] }
+        }, {
+            $inc: query,
+            $push:{'votesCount.voters' : userId}
         })
+       
+        if(question) return res.status(200).send({ success: 1, voted: upOrDown })
 
-        res.send({ success: 1, voted: upOrDown })
+        res.status(200).send({ success: 0, message: `yanliz bir kere oy kullanabilirsiniz!` })
     }
 
     async search(req, res, next) {

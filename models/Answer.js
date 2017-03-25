@@ -17,6 +17,7 @@ const AnswerSchema = new mongoose.Schema({
     },
     positiveCount: { type: Number, default: 0 },
     negativeCount: { type: Number, default: 0 },
+    voters:[{ type: ObjectId, ref: 'User' }],
     user: { type: ObjectId, ref: 'User' },
     solverMark:{type:Boolean , default:false},
     active: { type: Boolean, default: true },
