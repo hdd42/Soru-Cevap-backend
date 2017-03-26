@@ -37,9 +37,7 @@ const UserSchema = new mongoose.Schema({
     answerCount:{type:Number , default:0},
     questionCount:{type:Number , default:0},
     solvedCount:{type:Number , default:0},
-
-    courses: [{ type: ObjectId, ref: 'Course' }],
-    students: [{ type: ObjectId, ref: 'User' }],
+    
     active: { type: Boolean, default: true },
     deletedAt: { type: Date, default: null }
 },

@@ -24,5 +24,9 @@
     "mongoose": "^4.8.6",
     "morgan": "^1.8.1",
     "speakingurl": "^13.0.0"
+  },
+  "devDependencies": {
+    "osmosis": "^1.1.4",
+    "scrape-it": "^3.3.2"
   }
 }
