@@ -15,7 +15,9 @@ class CourseCtrl extends MainCtrl {
 
     async  index(req, res, next) {
 
-        let categories = await Category.find({}).exec()
+        let categories = await Category.find({})
+        .sort('-questionCount')
+        .exec()
 
         res.status(200).send({ success: 1, categories })
     }
