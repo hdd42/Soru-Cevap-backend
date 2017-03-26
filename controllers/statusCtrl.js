@@ -47,14 +47,14 @@ console.log('created category')
 function createCategory(){
     return new Promise((resolve, reject) =>{
         Promise.all([
-            Category.create({name:'C#' , descripton:'.NET in altin cocugu' , imgUrl:'/assets/img/categories/CSharp-Logo.png'}),
-            Category.create({name:'Java' , descripton:'Guclue, stabil, herseye yeter' , imgUrl:'/assets/img/categories/java_logo.png'}),
-            Category.create({name:'PHP' , descripton:'Internetin en cok kullanilan dili' , imgUrl:'/assets/img/categories/php-icon.png'}),
-            Category.create({name:'Ruby' , descripton:'Yakisikli, sempatik, tembel' , imgUrl:'/assets/img/categories/ruby-logo.png'}),
-            Category.create({name:'MYSQL' , descripton:'Zor isler bunlar' , imgUrl:'/assets/img/categories/coding.png'}),
-            Category.create({name:'Oracle' , descripton:'Pahali, Hantal, Kibirli' , imgUrl:'/assets/img/categories/coding.png'}),
-            Category.create({name:'MongoDB' , descripton:'Her sey her sey olabilir!' , imgUrl:'/assets/img/categories/coding.png'}),
-            Category.create({name:'ASP.NET' , descripton:'.NET Web bye bye' , imgUrl:'/assets/img/categories/coding.png'}),
+            Category.create({name:'C#' , description:'.NET in altin cocugu' , imgUrl:'/assets/img/categories/CSharp-Logo.png'}),
+            Category.create({name:'Java' , description:'Guclue, stabil, herseye yeter' , imgUrl:'/assets/img/categories/java_logo.png'}),
+            Category.create({name:'PHP' , description:'Internetin en cok kullanilan dili' , imgUrl:'/assets/img/categories/php-icon.png'}),
+            Category.create({name:'Ruby' , description:'Yakisikli, sempatik, tembel' , imgUrl:'/assets/img/categories/ruby-logo.png'}),
+            Category.create({name:'MYSQL' , description:'Zor isler bunlar' , imgUrl:'/assets/img/categories/coding.png'}),
+            Category.create({name:'Oracle' , description:'Pahali, Hantal, Kibirli' , imgUrl:'/assets/img/categories/coding.png'}),
+            Category.create({name:'MongoDB' , description:'Her sey her sey olabilir!' , imgUrl:'/assets/img/categories/coding.png'}),
+            Category.create({name:'ASP.NET' , description:'.NET Web bye bye' , imgUrl:'/assets/img/categories/coding.png'}),
         ])
         .then(() => resolve())
         .catch((err) => reject(err))

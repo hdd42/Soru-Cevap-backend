@@ -21,7 +21,7 @@ class CourseCtrl extends MainCtrl {
     }
 
     async  create(req, res, next) {
-        req.body.imgUrl = '/assets/img/categories/coding.png'
+      //  req.body.imgUrl = '/assets/img/categories/coding.png'
         let category = await Category.create(req.body)
         res.status(200).json({ success: 1, message: category })
     }
