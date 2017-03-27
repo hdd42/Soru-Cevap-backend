@@ -47,10 +47,6 @@ class AnswerCtrl extends MainCtrl {
         })
     }
 
-    async  destroy(req, res, next) {
-
-    }
-
     async questionSolved(req, res, nex) {
         let id = req.params.id
         console.log('is : ', id)
@@ -100,7 +96,7 @@ class AnswerCtrl extends MainCtrl {
             await question.save()
             return res.status(200).send({ success: 1, voted: upOrDown })
         }
-        res.status(404).json({success:0 , message:'cevap bulunamadi!'})
+        res.status(404).json({ success: 0, message: 'cevap bulunamadi!' })
         /*    let answer = await Question
                 .findOneAndUpdate({
                     'answers._id': id,
@@ -110,6 +106,34 @@ class AnswerCtrl extends MainCtrl {
                     $push: { 'answers.$.voters': userId }
                 })*/
 
+    }
+
+    async destroy(req, res, next) {
+        let id = req.params.id;
+        let userId = req.user._id
+
+        let query = {
+            $pull:{answers : {'_id':id} }
+        }
+        let question = await Question.update({
+            'answers._id': id,
+            'answers.user': userId
+        }, query)
+        console.log('s : ', question)
+        if (question.nModified) {
+          return res.status(200).json({success:1 , message:'deleted'})
+        }
+
+      res.status(404).send({success:0 , message:`bu id{${id}} ile eslesen bir cevap bulunamadi`})
+
+        /*    let answer = await Question
+                .findOneAndUpdate({
+                    'answers._id': id,
+                    'answers.voters': { $nin: [userId] }
+                }, {
+                    $inc: query,
+                    $push: { 'answers.$.voters': userId }
+                })*/
     }
 
 }
