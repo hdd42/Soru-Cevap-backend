@@ -21,7 +21,7 @@
     "glob": "^7.1.1",
     "jsonwebtoken": "^7.3.0",
     "method-override": "^2.3.7",
-    "mongoose": "^4.8.6",
+    "mongoose": "^4.9.2",
     "morgan": "^1.8.1",
     "speakingurl": "^13.0.0"
   },

@@ -113,7 +113,7 @@ class AnswerCtrl extends MainCtrl {
         let userId = req.user._id
 
         let query = {
-            $pull:{answers : {'_id':id} }
+            $pull: { answers: { '_id': id } }
         }
         let question = await Question.update({
             'answers._id': id,
@@ -121,10 +121,10 @@ class AnswerCtrl extends MainCtrl {
         }, query)
         console.log('s : ', question)
         if (question.nModified) {
-          return res.status(200).json({success:1 , message:'deleted'})
+            return res.status(200).json({ success: 1, message: 'deleted' })
         }
 
-      res.status(404).send({success:0 , message:`bu id{${id}} ile eslesen bir cevap bulunamadi`})
+        res.status(404).send({ success: 0, message: `bu id{${id}} ile eslesen bir cevap bulunamadi` })
 
         /*    let answer = await Question
                 .findOneAndUpdate({
@@ -134,6 +134,20 @@ class AnswerCtrl extends MainCtrl {
                     $inc: query,
                     $push: { 'answers.$.voters': userId }
                 })*/
+    }
+
+    async update(req, res, next) {
+        let { questionId, answerId, answer, answerRaw, title } = req.body
+
+        let question = await Question.findOneAndUpdate({
+            _id: questionId,
+            'answers._id': answerId
+        },
+        { $set: { "answers.$.answer" : answer,"answers.$.title":title ,"answers.$.answerRaw":answerRaw  } }
+        ,{new :true})
+        .populate('answers.user')
+        let a = question.answers.id(answerId)
+        res.status(200).send({success:1,answer:a})
     }
 
 }
@@ -175,6 +189,7 @@ router.route("/:id/questions")
 router.route("/:id")
     .get(ctrl.errorHandler(ctrl.find))
     .delete(ctrl.errorHandler(ctrl.destroy))
+    .put(ctrl.errorHandler(ctrl.update))
     //.post(ctrl.checkReq({ check: true, action: 'create' }), ctrl.errorHandler(ctrl.create))
     .all(ctrl.errorHandler(ctrl.notAllowed));
 router.route('/:id/courses')

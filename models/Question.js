@@ -20,9 +20,9 @@ const QuestionSchema = new mongoose.Schema({
     },
     user: { type: ObjectId, ref: 'User' },
     categories: [{ type: ObjectId, ref: 'Category' ,required:true}],
-    answers:[
-      AnswerSchema
-    ] ,
+    answers:{
+        type:[AnswerSchema]
+    } ,
     solved:{
         status:{type:Boolean , default:false},
         user: { type: ObjectId, ref: 'User' }
@@ -41,6 +41,7 @@ const QuestionSchema = new mongoose.Schema({
     //teachers: [{ type: ObjectId, ref: 'User' }],
     active: { type: Boolean, default: true },
     deletedAt: { type: Date, default: null }
+    
 },
     { timestamps: true }
 );
