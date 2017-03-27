@@ -48,7 +48,11 @@ class StudentCtrl extends MainCtrl {
     }
 
     async  destroy(req, res, next) {
-
+        let id = req.params.id;
+        let question =await Question.findByIdAndUpdate(id,{
+            $set:{deletedAt:new Date()}
+        })
+        res.status(200).send({success:1,message:'deleted'})
     }
     async  addAnswer(req, res, next) {
         let id = req.params.id;
@@ -113,6 +117,11 @@ class StudentCtrl extends MainCtrl {
         res.status(200).json({ success: 1, questions })
     }
 
+    async update(req,res,next){
+        let id = req.params.id;
+        let questions = await Question.findByIdAndUpdate(id, req.body)
+        res.status(200).send({success:1, message:'updated'})
+    }
 
 }
 const ctrl = new StudentCtrl();
@@ -138,6 +147,7 @@ router.route("/search")
     .delete(ctrl.errorHandler(ctrl.destroy))
 router.route("/:id")
     .get(ctrl.errorHandler(ctrl.find))
+    .put(ctrl.errorHandler(ctrl.update))
     .delete(ctrl.errorHandler(ctrl.destroy))
 
 

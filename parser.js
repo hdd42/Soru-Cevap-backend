@@ -24,3 +24,11 @@ request(req, function (error, response, body) {
     console.log("We’ve encountered an error: " + error);
   }
 });
+
+   User.getUserByUsername({'username':username}, function(err, user) {
+        if (!err) { // sorgu sirasinda bir hata varmi?
+          if(!user) return true // user null degilse , kullanici bulundu
+          return false // kullanici bulunamadi
+        }
+        throw new Error('Sorgu sirasinda bir hata olustu!')
+      })
