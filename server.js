@@ -1,8 +1,13 @@
 const  express = require("express")
 const Db  = require('./lib/dbConnection')
 const config= require("./config/config")
+const mongoose = require('mongoose')
 
 const app = express();
+
+//Use native promise instead of mongoose's 
+mongoose.Promise = global.Promise
+
  //Mongoose Models Sync!
 Db.sync()
 

@@ -1,0 +1,516 @@
+03/28/17 19:05:13 - Route: [from:23.96.97.233] GET /v2/medicalsummary/patient/pdf
+03/28/17 19:05:13 - Session: 58dab2b4b02f712a505bd5d3, Info: 55fb0fd145f515a8c56496ef|ddoomchf@medocity.com|DoctorCHF Doom||Medocity MD|||en|undefined|undefined|55fb0d4bc50136479b8cc7d0
+03/28/17 19:05:13 - medicalSummary_v2.GetPatientPdf(userId: 55fb0fd145f515a8c56496ef)
+03/28/17 19:05:13 - data: "{\"session\":\"58dab2b4b02f712a505bd5d3\",\"userId\":\"5654b688f75e1f981339afeb\",\"doctorId\":\"55fb0fd145f515a8c56496ef\",\"app\":\"Medocity MD\",\"unitPreference\":\"standard\",\"language\":\"en\"}"
+03/28/17 19:05:13 - session: 58dab2b4b02f712a505bd5d3
+03/28/17 19:05:13 - phantom.create()
+03/28/17 19:05:13 - page
+Route: [from:no ip] GET /v2/validatetoken/58dab2b4b02f712a505bd5d3
+GET /v2/validatetoken/58dab2b4b02f712a505bd5d3 200 5.032 ms - 34
+03/28/17 19:05:13 - Route: [from:23.96.97.233] GET /v2/graph/list
+03/28/17 19:05:13 - Session: 58dab2b4b02f712a505bd5d3, Info: 55fb0fd145f515a8c56496ef|ddoomchf@medocity.com|DoctorCHF Doom||Medocity MD|||en|undefined|undefined|55fb0d4bc50136479b8cc7d0
+03/28/17 19:05:13 - req.headers[accept-language] NOT SENT
+03/28/17 19:05:13 - authentication_v2.MedicalStaffAccess(userId: 55fb0fd145f515a8c56496ef)
+03/28/17 19:05:14 - Patient found in same account as current User.
+03/28/17 19:05:14 - graph_v2.GetGraphList(userId: 55fb0fd145f515a8c56496ef)
+03/28/17 19:05:14 - No start date passed - start date set to 30 days ago.
+03/28/17 19:05:14 - healthtrackerCollections56e33730f9561ef95f6034e1
+03/28/17 19:05:14 - req.headers[accept-language] NOT SENT
+GET /v2/graph/list?id=5654b688f75e1f981339afeb 200 275.129 ms - 1053
+info: Error: [$parse:syntax] http://errors.angularjs.org/1.5.7/$parse/syntax?p0=in&p1=is%20an%20unexpected%20token&p2=4&p3=at%20in%20controller.attributes&p4=in%20controller.attributes
+info: throwError@https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:228:516
+info: ast@https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:220:344
+info: compile@https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:230:201
+info: parse@https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:258:355
+info: g@https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:125:283
+info: $watch@https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:139:79
+info: link@https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:275:138
+info: https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:16:61
+info: ja@https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:81:36
+info: m@https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:66:276
+info: g@https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:58:482
+info: g@https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:58:499
+info: g@https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:58:499
+info: g@https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:58:499
+info: g@https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:58:499
+info: g@https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:58:499
+info: m@https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:66:215
+info: g@https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:58:482
+info: g@https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:58:499
+info: https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:58:120
+info: https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:20:556
+info: $eval@https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:145:107
+info: $apply@https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:145:345
+info: https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:20:518
+info: invoke@https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:41:381
+info: c@https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:20:384
+info: Bc@https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:21:164
+info: ge@https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:19:485
+info: https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:315:137
+info: b@https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:189:162
+info: Sf@https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:37:37
+info: d@https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:36:487 <!-- ngIf: at in controller.attributes -->
+info:   https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:117
+03/28/17 19:05:14 - Route: [from:23.96.97.233] GET /v2/medicalsummary/summary
+03/28/17 19:05:14 - Session: 58dab2b4b02f712a505bd5d3, Info: 55fb0fd145f515a8c56496ef|ddoomchf@medocity.com|DoctorCHF Doom||Medocity MD|||en|undefined|undefined|55fb0d4bc50136479b8cc7d0
+03/28/17 19:05:14 - authentication_v2.MedicalStaffAccess(userId: 55fb0fd145f515a8c56496ef)
+03/28/17 19:05:14 - page.open(): success
+03/28/17 19:05:14 - page.open()
+03/28/17 19:05:14 - Patient found in same account as current User.
+03/28/17 19:05:14 - medicalSummary_v2.GetSummary()
+03/28/17 19:05:14 - Route: [from:23.96.97.233] GET /v2/medicalsummary/summary/providers/
+03/28/17 19:05:14 - Session: 58dab2b4b02f712a505bd5d3, Info: 55fb0fd145f515a8c56496ef|ddoomchf@medocity.com|DoctorCHF Doom||Medocity MD|||en|undefined|undefined|55fb0d4bc50136479b8cc7d0
+03/28/17 19:05:14 - authentication_v2.MedicalStaffAccess(userId: 55fb0fd145f515a8c56496ef)
+03/28/17 19:05:14 - Route: [from:23.96.97.233] GET /v2/medicalsummary/medication/active
+03/28/17 19:05:14 - Session: 58dab2b4b02f712a505bd5d3, Info: 55fb0fd145f515a8c56496ef|ddoomchf@medocity.com|DoctorCHF Doom||Medocity MD|||en|undefined|undefined|55fb0d4bc50136479b8cc7d0
+03/28/17 19:05:14 - authentication_v2.MedicalStaffAccess(userId: 55fb0fd145f515a8c56496ef)
+03/28/17 19:05:14 - Route: [from:23.96.97.233] GET /v2/medicalsummary/medication/inactive
+03/28/17 19:05:14 - Session: 58dab2b4b02f712a505bd5d3, Info: 55fb0fd145f515a8c56496ef|ddoomchf@medocity.com|DoctorCHF Doom||Medocity MD|||en|undefined|undefined|55fb0d4bc50136479b8cc7d0
+03/28/17 19:05:15 - authentication_v2.MedicalStaffAccess(userId: 55fb0fd145f515a8c56496ef)
+03/28/17 19:05:15 - Route: [from:23.96.97.233] GET /v2/pdf/medicalsummary/alerts
+03/28/17 19:05:15 - Session: 58dab2b4b02f712a505bd5d3, Info: 55fb0fd145f515a8c56496ef|ddoomchf@medocity.com|DoctorCHF Doom||Medocity MD|||en|undefined|undefined|55fb0d4bc50136479b8cc7d0
+03/28/17 19:05:15 - authentication_v2.MedicalStaffAccess(userId: 55fb0fd145f515a8c56496ef)
+03/28/17 19:05:15 - Patient found in same account as current User.
+03/28/17 19:05:15 - medicalSummary_v2.GetProviders()
+03/28/17 19:05:15 - Patient found in same account as current User.
+03/28/17 19:05:15 - medicalSummary_v2.GetActiveMeds()
+03/28/17 19:05:15 - Route: [from:23.96.97.233] GET /v2/pdf/medicalsummary/profile
+03/28/17 19:05:15 - Session: 58dab2b4b02f712a505bd5d3, Info: 55fb0fd145f515a8c56496ef|ddoomchf@medocity.com|DoctorCHF Doom||Medocity MD|||en|undefined|undefined|55fb0d4bc50136479b8cc7d0
+03/28/17 19:05:15 - authentication_v2.MedicalStaffAccess(userId: 55fb0fd145f515a8c56496ef)
+03/28/17 19:05:15 - Patient found in same account as current User.
+03/28/17 19:05:15 - pdf_v2.GetAlerts()
+03/28/17 19:05:15 - Patient found in same account as current User.
+03/28/17 19:05:15 - medicalSummary_v2.GetInactiveMeds()
+03/28/17 19:05:15 - Patient found in same account as current User.
+03/28/17 19:05:15 - pdf_v2.GetPatientSummary()
+03/28/17 19:05:15 - Language:
+03/28/17 19:05:15 - medicalSummary_v2._GetDiagnosis_v2_5(5654b688f75e1f981339afeb)
+03/28/17 19:05:15 - RETURN ME: Cancer
+GET /v2/medicalsummary/summary?id=5654b688f75e1f981339afeb 200 370.930 ms - 549
+GET /v2/medicalsummary/medication/inactive?id=5654b688f75e1f981339afeb 200 476.821 ms - 6017
+GET /v2/pdf/medicalsummary/alerts?id=5654b688f75e1f981339afeb 200 462.336 ms - 791
+GET /v2/medicalsummary/summary/providers/?id=5654b688f75e1f981339afeb 200 495.259 ms - 384
+03/28/17 19:05:15 - medication.Events[] is not defined - Medication name: Cisplatin + Taxol will not show.
+03/28/17 19:05:15 - medication.Events[] is not defined - Medication name: Gemzar will not show.
+GET /v2/medicalsummary/medication/active?id=5654b688f75e1f981339afeb 200 1136.221 ms - 2533
+03/28/17 19:05:16 - medicalSummary_v2._GetDiagnosis_v2_5(5654b688f75e1f981339afeb)
+03/28/17 19:05:16 - RETURN ME: Cancer
+03/28/17 19:05:16 - utils.GetChronicConditionsForFamilyMember()
+03/28/17 19:05:16 - utils.GetTranslatedDiseaseName(Anemia)
+03/28/17 19:05:16 - utils.GetTranslatedDiseaseName(Alzheimers Disease)
+03/28/17 19:05:16 - utils.GetTranslatedDiseaseName(Atrial Fibrillation)
+03/28/17 19:05:16 - utils.GetChronicConditionsForFamilyMember()
+03/28/17 19:05:16 - utils.GetTranslatedDiseaseName(Anemia)
+03/28/17 19:05:16 - utils.GetTranslatedDiseaseName(Arthritis)
+03/28/17 19:05:16 - utils.GetChronicConditionsForFamilyMember()
+03/28/17 19:05:16 - utils.GetTranslatedDiseaseName(Anemia)
+03/28/17 19:05:16 - utils.GetTranslatedDiseaseName(Asthma)
+03/28/17 19:05:16 - utils.GetTranslatedDiseaseName(Atrial Fibrillation)
+03/28/17 19:05:16 - utils.GetChronicConditionsForFamilyMember()
+03/28/17 19:05:16 - utils.GetTranslatedDiseaseName(Cancer)
+03/28/17 19:05:16 - utils.GetTranslatedDiseaseName(Arthritis)
+03/28/17 19:05:16 - utils.GetChronicConditionsForFamilyMember()
+03/28/17 19:05:16 - utils.GetTranslatedDiseaseName(Anemia)
+03/28/17 19:05:16 - utils.GetTranslatedDiseaseName(Arthritis)
+03/28/17 19:05:16 - utils.GetChronicConditionsForFamilyMember()
+03/28/17 19:05:16 - utils.GetTranslatedDiseaseName(Anemia)
+03/28/17 19:05:16 - utils.GetTranslatedDiseaseName(Alzheimers Disease)
+index :  2
+Tobacco Status :  Former smoker
+GET /v2/pdf/medicalsummary/profile?id=5654b688f75e1f981339afeb 200 1966.418 ms - 1261
+03/28/17 19:05:16 - Route: [from:23.96.97.233] GET /v2/graph/
+03/28/17 19:05:16 - Session: 58dab2b4b02f712a505bd5d3, Info: 55fb0fd145f515a8c56496ef|ddoomchf@medocity.com|DoctorCHF Doom||Medocity MD|||en|undefined|undefined|55fb0d4bc50136479b8cc7d0
+03/28/17 19:05:16 - authentication_v2.MedicalStaffAccess(userId: 55fb0fd145f515a8c56496ef)
+03/28/17 19:05:16 - Route: [from:23.96.97.233] GET /v2/graph/
+03/28/17 19:05:16 - Session: 58dab2b4b02f712a505bd5d3, Info: 55fb0fd145f515a8c56496ef|ddoomchf@medocity.com|DoctorCHF Doom||Medocity MD|||en|undefined|undefined|55fb0d4bc50136479b8cc7d0
+03/28/17 19:05:16 - authentication_v2.MedicalStaffAccess(userId: 55fb0fd145f515a8c56496ef)
+03/28/17 19:05:16 - Route: [from:23.96.97.233] GET /v2/medicalsummary/doctor/chemo
+03/28/17 19:05:16 - Session: 58dab2b4b02f712a505bd5d3, Info: 55fb0fd145f515a8c56496ef|ddoomchf@medocity.com|DoctorCHF Doom||Medocity MD|||en|undefined|undefined|55fb0d4bc50136479b8cc7d0
+03/28/17 19:05:16 - authentication_v2.MedicalStaffAccess(userId: 55fb0fd145f515a8c56496ef)
+03/28/17 19:05:16 - Route: [from:23.96.97.233] GET /v2/medicalsummary/careplan/
+03/28/17 19:05:16 - Session: 58dab2b4b02f712a505bd5d3, Info: 55fb0fd145f515a8c56496ef|ddoomchf@medocity.com|DoctorCHF Doom||Medocity MD|||en|undefined|undefined|55fb0d4bc50136479b8cc7d0
+03/28/17 19:05:17 - authentication_v2.MedicalStaffAccess(userId: 55fb0fd145f515a8c56496ef)
+03/28/17 19:05:17 - Patient found in same account as current User.
+03/28/17 19:05:17 - GetCarePlan(User: 5654b688f75e1f981339afeb)
+03/28/17 19:05:17 - Patient found in same account as current User.
+03/28/17 19:05:17 - graph_v2.GetGraphData(userId: 55fb0fd145f515a8c56496ef)
+03/28/17 19:05:17 - query: SELECT DataField, CAST(DataValue as NUMERIC(19,2)) as DataValue, CAST(DataValue as NUMERIC(19,2)) ToolTip, CONVERT(varchar(50), ClientDate, 127) AS ClientDate                 FROM GraphData                 WHERE  UserId='5654b688f75e1f981339afeb' AND ClientDate BETWEEN '2017-02-26 00:00' AND '2017-03-29 00:00'AND DataField !='mood' AND  DataField IN('Oxygen')                ORDER BY FORMAT(ClientDate,'yyyy-MM-dd')
+03/28/17 19:05:17 - Patient found in same account as current User.
+03/28/17 19:05:17 - graph_v2.GetGraphData(userId: 55fb0fd145f515a8c56496ef)
+03/28/17 19:05:17 - query: SELECT DataField, CAST(DataValue as NUMERIC(19,2)) as DataValue, CAST(DataValue as NUMERIC(19,2)) ToolTip, CONVERT(varchar(50), ClientDate, 127) AS ClientDate                 FROM GraphData                 WHERE  UserId='5654b688f75e1f981339afeb' AND ClientDate BETWEEN '2017-02-26 00:00' AND '2017-03-29 00:00'AND DataField !='mood' AND  DataField IN('Bloodpressure_Systolic','Bloodpressure_Diastolic')                ORDER BY FORMAT(ClientDate,'yyyy-MM-dd')
+03/28/17 19:05:17 - Patient found in same account as current User.
+03/28/17 19:05:17 - chemotherapy_v2.GetChemo(userId: 5654b688f75e1f981339afeb
+GET /v2/medicalsummary/doctor/chemo?id=5654b688f75e1f981339afeb 200 1250.251 ms - 123
+03/28/17 19:05:17 - Route: [from:23.96.97.233] GET /v2/graph/
+03/28/17 19:05:17 - Session: 58dab2b4b02f712a505bd5d3, Info: 55fb0fd145f515a8c56496ef|ddoomchf@medocity.com|DoctorCHF Doom||Medocity MD|||en|undefined|undefined|55fb0d4bc50136479b8cc7d0
+03/28/17 19:05:17 - authentication_v2.MedicalStaffAccess(userId: 55fb0fd145f515a8c56496ef)
+03/28/17 19:05:17 -     Goal:Test gial
+03/28/17 19:05:17 -             Task:Test Task
+03/28/17 19:05:17 -     Goal:Eat food
+03/28/17 19:05:17 -             Task:RTTTTTT
+03/28/17 19:05:17 -     Goal:Adhere to prescribed therapies
+03/28/17 19:05:17 -             Task:Obtain and monitor your lab work as ordered and follow up on the results with your physician
+03/28/17 19:05:17 -             Task:Notifiy your physician of all changes in your condition
+03/28/17 19:05:17 -     Goal:Achieve well being/ self care
+03/28/17 19:05:17 -     Goal:Self Management of Medication
+03/28/17 19:05:17 -             Task:Contact your physician immediately if you feel like you are having a side effect (don’t stop taking them without letting your prescriber know)
+03/28/17 19:05:17 -             Task:Keep a written list of your medications (prescription, OTC, and vitamins) in your wallet and in an obvious place for reference.
+03/28/17 19:05:17 -     Goal:Self Management of Medication
+03/28/17 19:05:17 -             Task:Sachin Test Task 1
+03/28/17 19:05:17 -             Task:reorder
+03/28/17 19:05:17 -             Task:Sachin Test Task 1
+03/28/17 19:05:17 -             Task:Understand how your medications work, how to take them, and what side effects to be aware of
+03/28/17 19:05:17 - Patient found in same account as current User.
+03/28/17 19:05:17 - graph_v2.GetGraphData(userId: 55fb0fd145f515a8c56496ef)
+03/28/17 19:05:17 - query: SELECT DataField, CAST(DataValue as NUMERIC(19,2)) as DataValue, CAST(DataValue as NUMERIC(19,2)) ToolTip, CONVERT(varchar(50), ClientDate, 127) AS ClientDate                 FROM GraphData                 WHERE  UserId='5654b688f75e1f981339afeb' AND ClientDate BETWEEN '2017-02-26 00:00' AND '2017-03-29 00:00'AND DataField !='mood' AND  DataField IN('BloodSugar')                ORDER BY FORMAT(ClientDate,'yyyy-MM-dd')
+03/28/17 19:05:17 - Loading Doctor Comments: 140 of them
+GET /v2/medicalsummary/careplan/?id=5654b688f75e1f981339afeb 200 2008.837 ms - 9122
+03/28/17 19:05:18 - Token :
+GET /v2/medicalsummary/patient/pdf?id=5654b688f75e1f981339afeb&unit=standard 200 5042.419 ms - 292
+03/28/17 19:05:18 - output: {"bloodpressure_systolic":[],"bloodpressure_diastolic":[]}
+03/28/17 19:05:18 - output: {"oxygen":[]}
+GET /v2/graph/?id=5654b688f75e1f981339afeb&end=2017-03-28&fields%5B%5D=%5B%22Bloodpressure_Systolic%22,%22Bloodpressure_Diastolic%22%5D&start=02-26-2017 200 2616.835 ms - 212
+GET /v2/graph/?id=5654b688f75e1f981339afeb&end=2017-03-28&fields%5B%5D=%5B%22Oxygen%22%5D&start=02-26-2017 200 2685.542 ms - 296
+03/28/17 19:05:18 - output: {"bloodsugar":[]}
+GET /v2/graph/?id=5654b688f75e1f981339afeb&end=2017-03-28&fields%5B%5D=%5B%22BloodSugar%22%5D&start=02-26-2017 200 1840.541 ms - 107
+Socket disconnected!
+
+**********************************************
+03/28/17 19:15:33 - Route: [from:23.96.97.233] GET /v2/medicalsummary/patient/pdf
+03/28/17 19:15:33 - Session: 58dab2b4b02f712a505bd5d3, Info: 55fb0fd145f515a8c56496ef|ddoomchf@medocity.com|DoctorCHF Doom||Medocity MD|||en|undefined|undefined|55fb0d4bc50136479b8cc7d0
+03/28/17 19:15:33 - medicalSummary_v2.GetPatientPdf(userId: 55fb0fd145f515a8c56496ef)
+03/28/17 19:15:33 - data: "{\"session\":\"58dab2b4b02f712a505bd5d3\",\"userId\":\"5654b688f75e1f981339afeb\",\"doctorId\":\"55fb0fd145f515a8c56496ef\",\"app\":\"Medocity MD\",\"unitPreference\":\"standard\",\"language\":\"en\"}"
+03/28/17 19:15:33 - session: 58dab2b4b02f712a505bd5d3
+03/28/17 19:15:33 - phantom.create()
+03/28/17 19:15:33 - page
+Route: [from:no ip] GET /v2/validatetoken/58dab2b4b02f712a505bd5d3
+GET /v2/validatetoken/58dab2b4b02f712a505bd5d3 200 3.576 ms - 34
+03/28/17 19:15:34 - Route: [from:23.96.97.233] GET /v2/graph/list
+03/28/17 19:15:34 - Session: 58dab2b4b02f712a505bd5d3, Info: 55fb0fd145f515a8c56496ef|ddoomchf@medocity.com|DoctorCHF Doom||Medocity MD|||en|undefined|undefined|55fb0d4bc50136479b8cc7d0
+03/28/17 19:15:34 - req.headers[accept-language] NOT SENT
+03/28/17 19:15:34 - authentication_v2.MedicalStaffAccess(userId: 55fb0fd145f515a8c56496ef)
+03/28/17 19:15:34 - Patient found in same account as current User.
+03/28/17 19:15:34 - graph_v2.GetGraphList(userId: 55fb0fd145f515a8c56496ef)
+03/28/17 19:15:34 - No start date passed - start date set to 30 days ago.
+03/28/17 19:15:34 - healthtrackerCollections56e33730f9561ef95f6034e1
+03/28/17 19:15:34 - req.headers[accept-language] NOT SENT
+GET /v2/graph/list?id=5654b688f75e1f981339afeb 200 268.564 ms - 1053
+info: Error: [$parse:syntax] http://errors.angularjs.org/1.5.7/$parse/syntax?p0=in&p1=is%20an%20unexpected%20token&p2=4&p3=at%20in%20controller.attributes&p4=in%20controller.attributes
+info: throwError@https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:228:516
+info: ast@https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:220:344
+info: compile@https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:230:201
+info: parse@https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:258:355
+info: g@https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:125:283
+info: $watch@https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:139:79
+info: link@https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:275:138
+info: https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:16:61
+info: ja@https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:81:36
+info: m@https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:66:276
+info: g@https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:58:482
+info: g@https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:58:499
+info: g@https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:58:499
+info: g@https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:58:499
+info: g@https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:58:499
+info: g@https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:58:499
+info: m@https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:66:215
+info: g@https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:58:482
+info: g@https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:58:499
+info: https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:58:120
+info: https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:20:556
+info: $eval@https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:145:107
+info: $apply@https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:145:345
+info: https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:20:518
+info: invoke@https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:41:381
+info: c@https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:20:384
+info: Bc@https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:21:164
+info: ge@https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:19:485
+info: https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:315:137
+info: b@https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:189:162
+info: Sf@https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:37:37
+info: d@https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:36:487 <!-- ngIf: at in controller.attributes -->
+info:   https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js:117
+03/28/17 19:15:35 - Route: [from:23.96.97.233] GET /v2/medicalsummary/summary
+03/28/17 19:15:35 - Session: 58dab2b4b02f712a505bd5d3, Info: 55fb0fd145f515a8c56496ef|ddoomchf@medocity.com|DoctorCHF Doom||Medocity MD|||en|undefined|undefined|55fb0d4bc50136479b8cc7d0
+03/28/17 19:15:35 - authentication_v2.MedicalStaffAccess(userId: 55fb0fd145f515a8c56496ef)
+03/28/17 19:15:35 - Route: [from:23.96.97.233] GET /v2/pdf/medicalsummary/alerts
+03/28/17 19:15:35 - Session: 58dab2b4b02f712a505bd5d3, Info: 55fb0fd145f515a8c56496ef|ddoomchf@medocity.com|DoctorCHF Doom||Medocity MD|||en|undefined|undefined|55fb0d4bc50136479b8cc7d0
+03/28/17 19:15:35 - authentication_v2.MedicalStaffAccess(userId: 55fb0fd145f515a8c56496ef)
+03/28/17 19:15:35 - Route: [from:23.96.97.233] GET /v2/pdf/medicalsummary/profile
+03/28/17 19:15:35 - Session: 58dab2b4b02f712a505bd5d3, Info: 55fb0fd145f515a8c56496ef|ddoomchf@medocity.com|DoctorCHF Doom||Medocity MD|||en|undefined|undefined|55fb0d4bc50136479b8cc7d0
+03/28/17 19:15:35 - authentication_v2.MedicalStaffAccess(userId: 55fb0fd145f515a8c56496ef)
+03/28/17 19:15:35 - page.open(): success
+03/28/17 19:15:35 - page.open()
+03/28/17 19:15:35 - Route: [from:23.96.97.233] GET /v2/medicalsummary/medication/inactive
+03/28/17 19:15:35 - Session: 58dab2b4b02f712a505bd5d3, Info: 55fb0fd145f515a8c56496ef|ddoomchf@medocity.com|DoctorCHF Doom||Medocity MD|||en|undefined|undefined|55fb0d4bc50136479b8cc7d0
+03/28/17 19:15:35 - authentication_v2.MedicalStaffAccess(userId: 55fb0fd145f515a8c56496ef)
+03/28/17 19:15:35 - Patient found in same account as current User.
+03/28/17 19:15:35 - medicalSummary_v2.GetSummary()
+03/28/17 19:15:35 - Patient found in same account as current User.
+03/28/17 19:15:35 - pdf_v2.GetAlerts()
+03/28/17 19:15:35 - Route: [from:23.96.97.233] GET /v2/medicalsummary/summary/providers/
+03/28/17 19:15:35 - Session: 58dab2b4b02f712a505bd5d3, Info: 55fb0fd145f515a8c56496ef|ddoomchf@medocity.com|DoctorCHF Doom||Medocity MD|||en|undefined|undefined|55fb0d4bc50136479b8cc7d0
+03/28/17 19:15:35 - authentication_v2.MedicalStaffAccess(userId: 55fb0fd145f515a8c56496ef)
+03/28/17 19:15:35 - Patient found in same account as current User.
+03/28/17 19:15:35 - pdf_v2.GetPatientSummary()
+03/28/17 19:15:35 - Language:
+03/28/17 19:15:35 - Route: [from:23.96.97.233] GET /v2/medicalsummary/medication/active
+03/28/17 19:15:35 - Session: 58dab2b4b02f712a505bd5d3, Info: 55fb0fd145f515a8c56496ef|ddoomchf@medocity.com|DoctorCHF Doom||Medocity MD|||en|undefined|undefined|55fb0d4bc50136479b8cc7d0
+03/28/17 19:15:35 - authentication_v2.MedicalStaffAccess(userId: 55fb0fd145f515a8c56496ef)
+03/28/17 19:15:35 - Patient found in same account as current User.
+03/28/17 19:15:35 - medicalSummary_v2.GetProviders()
+03/28/17 19:15:35 - Patient found in same account as current User.
+03/28/17 19:15:35 - medicalSummary_v2.GetInactiveMeds()
+03/28/17 19:15:35 - Patient found in same account as current User.
+03/28/17 19:15:35 - medicalSummary_v2.GetActiveMeds()
+GET /v2/pdf/medicalsummary/alerts?id=5654b688f75e1f981339afeb 200 215.412 ms - 791
+03/28/17 19:15:35 - medicalSummary_v2._GetDiagnosis_v2_5(5654b688f75e1f981339afeb)
+03/28/17 19:15:35 - RETURN ME: Cancer
+GET /v2/medicalsummary/summary?id=5654b688f75e1f981339afeb 200 266.179 ms - 549
+GET /v2/medicalsummary/summary/providers/?id=5654b688f75e1f981339afeb 200 387.109 ms - 384
+03/28/17 19:15:35 - Route: [from:23.96.97.233] GET /v2/medicalsummary/doctor/chemo
+03/28/17 19:15:35 - Session: 58dab2b4b02f712a505bd5d3, Info: 55fb0fd145f515a8c56496ef|ddoomchf@medocity.com|DoctorCHF Doom||Medocity MD|||en|undefined|undefined|55fb0d4bc50136479b8cc7d0
+03/28/17 19:15:35 - authentication_v2.MedicalStaffAccess(userId: 55fb0fd145f515a8c56496ef)
+03/28/17 19:15:35 - Patient found in same account as current User.
+03/28/17 19:15:35 - chemotherapy_v2.GetChemo(userId: 5654b688f75e1f981339afeb
+03/28/17 19:15:35 - Route: [from:23.96.97.233] GET /v2/graph/
+03/28/17 19:15:35 - Session: 58dab2b4b02f712a505bd5d3, Info: 55fb0fd145f515a8c56496ef|ddoomchf@medocity.com|DoctorCHF Doom||Medocity MD|||en|undefined|undefined|55fb0d4bc50136479b8cc7d0
+03/28/17 19:15:35 - authentication_v2.MedicalStaffAccess(userId: 55fb0fd145f515a8c56496ef)
+03/28/17 19:15:36 - medication.Events[] is not defined - Medication name: Cisplatin + Taxol will not show.
+03/28/17 19:15:36 - medication.Events[] is not defined - Medication name: Gemzar will not show.
+GET /v2/medicalsummary/medication/active?id=5654b688f75e1f981339afeb 200 1316.749 ms - 2533
+03/28/17 19:15:36 - Patient found in same account as current User.
+03/28/17 19:15:36 - graph_v2.GetGraphData(userId: 55fb0fd145f515a8c56496ef)
+03/28/17 19:15:36 - query: SELECT DataField, CAST(DataValue as NUMERIC(19,2)) as DataValue, CAST(DataValue as NUMERIC(19,2)) ToolTip, CONVERT(varchar(50), ClientDate, 127) AS ClientDate                 FROM GraphData                 WHERE  UserId='5654b688f75e1f981339afeb' AND ClientDate BETWEEN '2017-02-26 00:00' AND '2017-03-29 00:00'AND DataField !='mood' AND  DataField IN('Oxygen')                ORDER BY FORMAT(ClientDate,'yyyy-MM-dd')
+GET /v2/medicalsummary/medication/inactive?id=5654b688f75e1f981339afeb 200 1421.590 ms - 6017
+GET /v2/medicalsummary/doctor/chemo?id=5654b688f75e1f981339afeb 200 996.191 ms - 123
+03/28/17 19:15:36 - Route: [from:23.96.97.233] GET /v2/medicalsummary/careplan/
+03/28/17 19:15:36 - Session: 58dab2b4b02f712a505bd5d3, Info: 55fb0fd145f515a8c56496ef|ddoomchf@medocity.com|DoctorCHF Doom||Medocity MD|||en|undefined|undefined|55fb0d4bc50136479b8cc7d0
+03/28/17 19:15:36 - authentication_v2.MedicalStaffAccess(userId: 55fb0fd145f515a8c56496ef)
+03/28/17 19:15:37 - medicalSummary_v2._GetDiagnosis_v2_5(5654b688f75e1f981339afeb)
+03/28/17 19:15:37 - RETURN ME: Cancer
+03/28/17 19:15:37 - utils.GetChronicConditionsForFamilyMember()
+03/28/17 19:15:37 - utils.GetTranslatedDiseaseName(Anemia)
+03/28/17 19:15:37 - utils.GetTranslatedDiseaseName(Alzheimers Disease)
+03/28/17 19:15:37 - utils.GetTranslatedDiseaseName(Atrial Fibrillation)
+03/28/17 19:15:37 - utils.GetChronicConditionsForFamilyMember()
+03/28/17 19:15:37 - utils.GetTranslatedDiseaseName(Anemia)
+03/28/17 19:15:37 - utils.GetTranslatedDiseaseName(Arthritis)
+03/28/17 19:15:37 - utils.GetChronicConditionsForFamilyMember()
+03/28/17 19:15:37 - utils.GetTranslatedDiseaseName(Anemia)
+03/28/17 19:15:37 - utils.GetTranslatedDiseaseName(Asthma)
+03/28/17 19:15:37 - utils.GetTranslatedDiseaseName(Atrial Fibrillation)
+03/28/17 19:15:37 - utils.GetChronicConditionsForFamilyMember()
+03/28/17 19:15:37 - utils.GetTranslatedDiseaseName(Cancer)
+03/28/17 19:15:37 - utils.GetTranslatedDiseaseName(Arthritis)
+03/28/17 19:15:37 - utils.GetChronicConditionsForFamilyMember()
+03/28/17 19:15:37 - utils.GetTranslatedDiseaseName(Anemia)
+03/28/17 19:15:37 - utils.GetTranslatedDiseaseName(Arthritis)
+03/28/17 19:15:37 - utils.GetChronicConditionsForFamilyMember()
+03/28/17 19:15:37 - utils.GetTranslatedDiseaseName(Anemia)
+03/28/17 19:15:37 - utils.GetTranslatedDiseaseName(Alzheimers Disease)
+index :  2
+Tobacco Status :  Former smoker
+GET /v2/pdf/medicalsummary/profile?id=5654b688f75e1f981339afeb 200 2056.388 ms - 1261
+03/28/17 19:15:37 - Patient found in same account as current User.
+03/28/17 19:15:37 - GetCarePlan(User: 5654b688f75e1f981339afeb)
+03/28/17 19:15:37 - Route: [from:23.96.97.233] GET /v2/graph/
+03/28/17 19:15:37 - Session: 58dab2b4b02f712a505bd5d3, Info: 55fb0fd145f515a8c56496ef|ddoomchf@medocity.com|DoctorCHF Doom||Medocity MD|||en|undefined|undefined|55fb0d4bc50136479b8cc7d0
+03/28/17 19:15:37 - authentication_v2.MedicalStaffAccess(userId: 55fb0fd145f515a8c56496ef)
+03/28/17 19:15:37 - Route: [from:23.96.97.233] GET /v2/graph/
+03/28/17 19:15:37 - Session: 58dab2b4b02f712a505bd5d3, Info: 55fb0fd145f515a8c56496ef|ddoomchf@medocity.com|DoctorCHF Doom||Medocity MD|||en|undefined|undefined|55fb0d4bc50136479b8cc7d0
+03/28/17 19:15:37 - authentication_v2.MedicalStaffAccess(userId: 55fb0fd145f515a8c56496ef)
+03/28/17 19:15:37 - Route: [from:23.96.97.233] GET /v2/graph/
+03/28/17 19:15:37 - Session: 58dab2b4b02f712a505bd5d3, Info: 55fb0fd145f515a8c56496ef|ddoomchf@medocity.com|DoctorCHF Doom||Medocity MD|||en|undefined|undefined|55fb0d4bc50136479b8cc7d0
+03/28/17 19:15:37 - authentication_v2.MedicalStaffAccess(userId: 55fb0fd145f515a8c56496ef)
+03/28/17 19:15:37 -     Goal:Test gial
+03/28/17 19:15:37 -             Task:Test Task
+03/28/17 19:15:37 -     Goal:Eat food
+03/28/17 19:15:37 -             Task:RTTTTTT
+03/28/17 19:15:37 -     Goal:Adhere to prescribed therapies
+03/28/17 19:15:37 -             Task:Obtain and monitor your lab work as ordered and follow up on the results with your physician
+03/28/17 19:15:37 -             Task:Notifiy your physician of all changes in your condition
+03/28/17 19:15:37 -     Goal:Achieve well being/ self care
+03/28/17 19:15:37 -     Goal:Self Management of Medication
+03/28/17 19:15:37 -             Task:Contact your physician immediately if you feel like you are having a side effect (don’t stop taking them without letting your prescriber know)
+03/28/17 19:15:37 -             Task:Keep a written list of your medications (prescription, OTC, and vitamins) in your wallet and in an obvious place for reference.
+03/28/17 19:15:37 -     Goal:Self Management of Medication
+03/28/17 19:15:37 -             Task:Sachin Test Task 1
+03/28/17 19:15:37 -             Task:reorder
+03/28/17 19:15:37 -             Task:Sachin Test Task 1
+03/28/17 19:15:37 -             Task:Understand how your medications work, how to take them, and what side effects to be aware of
+03/28/17 19:15:37 - Patient found in same account as current User.
+03/28/17 19:15:37 - graph_v2.GetGraphData(userId: 55fb0fd145f515a8c56496ef)
+03/28/17 19:15:37 - query: SELECT DataField, CAST(DataValue as NUMERIC(19,2)) as DataValue, CAST(DataValue as NUMERIC(19,2)) ToolTip, CONVERT(varchar(50), ClientDate, 127) AS ClientDate                 FROM GraphData                 WHERE  UserId='5654b688f75e1f981339afeb' AND ClientDate BETWEEN '2017-02-26 00:00' AND '2017-03-29 00:00'AND DataField !='mood' AND  DataField IN('HeartRate')                ORDER BY FORMAT(ClientDate,'yyyy-MM-dd')
+03/28/17 19:15:37 - Patient found in same account as current User.
+03/28/17 19:15:37 - graph_v2.GetGraphData(userId: 55fb0fd145f515a8c56496ef)
+03/28/17 19:15:37 - query: SELECT DataField, CAST(DataValue as NUMERIC(19,2)) as DataValue, CAST(DataValue as NUMERIC(19,2)) ToolTip, CONVERT(varchar(50), ClientDate, 127) AS ClientDate                 FROM GraphData                 WHERE  UserId='5654b688f75e1f981339afeb' AND ClientDate BETWEEN '2017-02-26 00:00' AND '2017-03-29 00:00'AND DataField !='mood' AND  DataField IN('Bloodpressure_Systolic','Bloodpressure_Diastolic')                ORDER BY FORMAT(ClientDate,'yyyy-MM-dd')
+03/28/17 19:15:37 - Patient found in same account as current User.
+03/28/17 19:15:37 - graph_v2.GetGraphData(userId: 55fb0fd145f515a8c56496ef)
+03/28/17 19:15:37 - query: SELECT DataField, CAST(DataValue as NUMERIC(19,2)) as DataValue, CAST(DataValue as NUMERIC(19,2)) ToolTip, CONVERT(varchar(50), ClientDate, 127) AS ClientDate                 FROM GraphData                 WHERE  UserId='5654b688f75e1f981339afeb' AND ClientDate BETWEEN '2017-02-26 00:00' AND '2017-03-29 00:00'AND DataField !='mood' AND  DataField IN('BloodSugar')                ORDER BY FORMAT(ClientDate,'yyyy-MM-dd')
+03/28/17 19:15:38 - Loading Doctor Comments: 140 of them
+GET /v2/medicalsummary/careplan/?id=5654b688f75e1f981339afeb 200 2511.253 ms - 9122
+Socket disconnected!
+03/28/17 19:15:38 - output: {"oxygen":[]}
+03/28/17 19:15:38 - Token :
+GET /v2/medicalsummary/patient/pdf?id=5654b688f75e1f981339afeb&unit=standard 200 5103.706 ms - 294
+GET /v2/graph/?id=5654b688f75e1f981339afeb&end=2017-03-28&fields%5B%5D=%5B%22Oxygen%22%5D&start=02-26-2017 200 2803.700 ms - 296
+03/28/17 19:15:38 - output: {"bloodpressure_systolic":[],"bloodpressure_diastolic":[]}
+03/28/17 19:15:38 - output: {"heartrate":[]}
+GET /v2/graph/?id=5654b688f75e1f981339afeb&end=2017-03-28&fields%5B%5D=%5B%22Bloodpressure_Systolic%22,%22Bloodpressure_Diastolic%22%5D&start=02-26-2017 200 1275.287 ms - 212
+03/28/17 19:15:38 - output: {"bloodsugar":[]}
+GET /v2/graph/?id=5654b688f75e1f981339afeb&end=2017-03-28&fields%5B%5D=%5B%22BloodSugar%22%5D&start=02-26-2017 200 1293.854 ms - 107
+GET /v2/graph/?id=5654b688f75e1f981339afeb&end=2017-03-28&fields%5B%5D=%5B%22HeartRate%22%5D&start=02-26-2017 200 1321.229 ms - 884
+
+*************************************************************************
+
+
+GET /lookup/allergyreactions 200 1.070 ms - 364
+GET /lookup/vitals 200 1.098 ms - 1393
+03/28/17 19:19:13 - Route: [from:23.96.97.233] GET /v2/medicalsummary/summary/allergies/nka
+03/28/17 19:19:13 - Session: 58dab2b4b02f712a505bd5d3, Info: 55fb0fd145f515a8c56496ef|ddoomchf@medocity.com|DoctorCHF Doom||Medocity MD|||en|undefined|undefined|55fb0d4bc50136479b8cc7d0
+03/28/17 19:19:13 - authentication_v2.MedicalStaffAccess(userId: 55fb0fd145f515a8c56496ef)
+03/28/17 19:19:13 - Patient found in same account as current User.
+03/28/17 19:19:13 - profile_v2.GetNKAStatus()
+GET /v2/medicalsummary/summary/allergies/nka?id=5654b688f75e1f981339afeb 200 55.108 ms - 36
+03/28/17 19:19:21 - Route: [from:23.96.97.233] GET /v2/medicalsummary/patient/pdf
+03/28/17 19:19:21 - Session: 58dab2b4b02f712a505bd5d3, Info: 55fb0fd145f515a8c56496ef|ddoomchf@medocity.com|DoctorCHF Doom||Medocity MD|||en|undefined|undefined|55fb0d4bc50136479b8cc7d0
+03/28/17 19:19:21 - medicalSummary_v2.GetPatientPdf(userId: 55fb0fd145f515a8c56496ef)
+03/28/17 19:19:21 - data: "{\"session\":\"58dab2b4b02f712a505bd5d3\",\"userId\":\"5654b688f75e1f981339afeb\",\"doctorId\":\"55fb0fd145f515a8c56496ef\",\"app\":\"Medocity MD\",\"unitPreference\":\"standard\",\"language\":\"en\"}"
+03/28/17 19:19:21 - session: 58dab2b4b02f712a505bd5d3
+03/28/17 19:19:21 - phantom.create()
+03/28/17 19:19:22 - page
+Route: [from:no ip] GET /v2/validatetoken/58dab2b4b02f712a505bd5d3
+GET /v2/validatetoken/58dab2b4b02f712a505bd5d3 200 3.351 ms - 34
+03/28/17 19:19:22 - Route: [from:23.96.97.233] GET /v2/graph/list
+03/28/17 19:19:22 - Session: 58dab2b4b02f712a505bd5d3, Info: 55fb0fd145f515a8c56496ef|ddoomchf@medocity.com|DoctorCHF Doom||Medocity MD|||en|undefined|undefined|55fb0d4bc50136479b8cc7d0
+03/28/17 19:19:22 - req.headers[accept-language] NOT SENT
+03/28/17 19:19:22 - authentication_v2.MedicalStaffAccess(userId: 55fb0fd145f515a8c56496ef)
+03/28/17 19:19:22 - Patient found in same account as current User.
+03/28/17 19:19:22 - graph_v2.GetGraphList(userId: 55fb0fd145f515a8c56496ef)
+03/28/17 19:19:22 - No start date passed - start date set to 30 days ago.
+03/28/17 19:19:22 - healthtrackerCollections56e33730f9561ef95f6034e1
+03/28/17 19:19:22 - req.headers[accept-language] NOT SENT
+GET /v2/graph/list?id=5654b688f75e1f981339afeb 200 156.689 ms - 1053
+03/28/17 19:19:23 - Route: [from:23.96.97.233] GET /v2/pdf/medicalsummary/profile
+03/28/17 19:19:23 - Session: 58dab2b4b02f712a505bd5d3, Info: 55fb0fd145f515a8c56496ef|ddoomchf@medocity.com|DoctorCHF Doom||Medocity MD|||en|undefined|undefined|55fb0d4bc50136479b8cc7d0
+03/28/17 19:19:23 - authentication_v2.MedicalStaffAccess(userId: 55fb0fd145f515a8c56496ef)
+03/28/17 19:19:23 - Route: [from:23.96.97.233] GET /v2/medicalsummary/medication/active
+03/28/17 19:19:23 - Session: 58dab2b4b02f712a505bd5d3, Info: 55fb0fd145f515a8c56496ef|ddoomchf@medocity.com|DoctorCHF Doom||Medocity MD|||en|undefined|undefined|55fb0d4bc50136479b8cc7d0
+03/28/17 19:19:23 - authentication_v2.MedicalStaffAccess(userId: 55fb0fd145f515a8c56496ef)
+03/28/17 19:19:23 - Route: [from:23.96.97.233] GET /v2/medicalsummary/summary
+03/28/17 19:19:23 - Session: 58dab2b4b02f712a505bd5d3, Info: 55fb0fd145f515a8c56496ef|ddoomchf@medocity.com|DoctorCHF Doom||Medocity MD|||en|undefined|undefined|55fb0d4bc50136479b8cc7d0
+03/28/17 19:19:23 - authentication_v2.MedicalStaffAccess(userId: 55fb0fd145f515a8c56496ef)
+03/28/17 19:19:23 - Route: [from:23.96.97.233] GET /v2/medicalsummary/summary/providers/
+03/28/17 19:19:23 - Session: 58dab2b4b02f712a505bd5d3, Info: 55fb0fd145f515a8c56496ef|ddoomchf@medocity.com|DoctorCHF Doom||Medocity MD|||en|undefined|undefined|55fb0d4bc50136479b8cc7d0
+03/28/17 19:19:23 - authentication_v2.MedicalStaffAccess(userId: 55fb0fd145f515a8c56496ef)
+03/28/17 19:19:23 - Route: [from:23.96.97.233] GET /v2/pdf/medicalsummary/alerts
+03/28/17 19:19:23 - Session: 58dab2b4b02f712a505bd5d3, Info: 55fb0fd145f515a8c56496ef|ddoomchf@medocity.com|DoctorCHF Doom||Medocity MD|||en|undefined|undefined|55fb0d4bc50136479b8cc7d0
+03/28/17 19:19:23 - authentication_v2.MedicalStaffAccess(userId: 55fb0fd145f515a8c56496ef)
+03/28/17 19:19:23 - Patient found in same account as current User.
+03/28/17 19:19:23 - pdf_v2.GetPatientSummary()
+03/28/17 19:19:23 - Language:
+03/28/17 19:19:23 - page.open(): success
+03/28/17 19:19:23 - page.open()
+03/28/17 19:19:23 - Patient found in same account as current User.
+03/28/17 19:19:23 - medicalSummary_v2.GetProviders()
+03/28/17 19:19:23 - Patient found in same account as current User.
+03/28/17 19:19:23 - medicalSummary_v2.GetActiveMeds()
+03/28/17 19:19:23 - Patient found in same account as current User.
+03/28/17 19:19:23 - medicalSummary_v2.GetSummary()
+03/28/17 19:19:23 - Route: [from:23.96.97.233] GET /v2/medicalsummary/medication/inactive
+03/28/17 19:19:23 - Session: 58dab2b4b02f712a505bd5d3, Info: 55fb0fd145f515a8c56496ef|ddoomchf@medocity.com|DoctorCHF Doom||Medocity MD|||en|undefined|undefined|55fb0d4bc50136479b8cc7d0
+03/28/17 19:19:23 - authentication_v2.MedicalStaffAccess(userId: 55fb0fd145f515a8c56496ef)
+03/28/17 19:19:23 - Patient found in same account as current User.
+03/28/17 19:19:23 - pdf_v2.GetAlerts()
+03/28/17 19:19:23 - Patient found in same account as current User.
+03/28/17 19:19:23 - medicalSummary_v2.GetInactiveMeds()
+03/28/17 19:19:23 - medicalSummary_v2._GetDiagnosis_v2_5(5654b688f75e1f981339afeb)
+03/28/17 19:19:23 - RETURN ME: Cancer
+GET /v2/medicalsummary/summary/providers/?id=5654b688f75e1f981339afeb 200 629.878 ms - 384
+GET /v2/medicalsummary/summary?id=5654b688f75e1f981339afeb 200 656.627 ms - 549
+03/28/17 19:19:24 - medication.Events[] is not defined - Medication name: Cisplatin + Taxol will not show.
+03/28/17 19:19:24 - medication.Events[] is not defined - Medication name: Gemzar will not show.
+GET /v2/medicalsummary/medication/active?id=5654b688f75e1f981339afeb 200 1356.352 ms - 2533
+GET /v2/pdf/medicalsummary/alerts?id=5654b688f75e1f981339afeb 200 1364.521 ms - 791
+GET /v2/medicalsummary/medication/inactive?id=5654b688f75e1f981339afeb 200 1388.297 ms - 6017
+03/28/17 19:19:24 - medicalSummary_v2._GetDiagnosis_v2_5(5654b688f75e1f981339afeb)
+03/28/17 19:19:24 - RETURN ME: Cancer
+03/28/17 19:19:24 - utils.GetChronicConditionsForFamilyMember()
+03/28/17 19:19:24 - utils.GetTranslatedDiseaseName(Anemia)
+03/28/17 19:19:24 - utils.GetTranslatedDiseaseName(Alzheimers Disease)
+03/28/17 19:19:24 - utils.GetTranslatedDiseaseName(Atrial Fibrillation)
+03/28/17 19:19:24 - utils.GetChronicConditionsForFamilyMember()
+03/28/17 19:19:24 - utils.GetTranslatedDiseaseName(Anemia)
+03/28/17 19:19:24 - utils.GetTranslatedDiseaseName(Arthritis)
+03/28/17 19:19:24 - utils.GetChronicConditionsForFamilyMember()
+03/28/17 19:19:24 - utils.GetTranslatedDiseaseName(Anemia)
+03/28/17 19:19:24 - utils.GetTranslatedDiseaseName(Asthma)
+03/28/17 19:19:24 - utils.GetTranslatedDiseaseName(Atrial Fibrillation)
+03/28/17 19:19:24 - utils.GetChronicConditionsForFamilyMember()
+03/28/17 19:19:24 - utils.GetTranslatedDiseaseName(Cancer)
+03/28/17 19:19:24 - utils.GetTranslatedDiseaseName(Arthritis)
+03/28/17 19:19:24 - utils.GetChronicConditionsForFamilyMember()
+03/28/17 19:19:24 - utils.GetTranslatedDiseaseName(Anemia)
+03/28/17 19:19:24 - utils.GetTranslatedDiseaseName(Arthritis)
+03/28/17 19:19:24 - utils.GetChronicConditionsForFamilyMember()
+03/28/17 19:19:24 - utils.GetTranslatedDiseaseName(Anemia)
+03/28/17 19:19:24 - utils.GetTranslatedDiseaseName(Alzheimers Disease)
+index :  2
+Tobacco Status :  Former smoker
+GET /v2/pdf/medicalsummary/profile?id=5654b688f75e1f981339afeb 200 1811.848 ms - 1261
+03/28/17 19:19:24 - Route: [from:23.96.97.233] GET /v2/medicalsummary/doctor/chemo
+03/28/17 19:19:24 - Session: 58dab2b4b02f712a505bd5d3, Info: 55fb0fd145f515a8c56496ef|ddoomchf@medocity.com|DoctorCHF Doom||Medocity MD|||en|undefined|undefined|55fb0d4bc50136479b8cc7d0
+03/28/17 19:19:25 - authentication_v2.MedicalStaffAccess(userId: 55fb0fd145f515a8c56496ef)
+03/28/17 19:19:25 - Route: [from:23.96.97.233] GET /v2/medicalsummary/careplan/
+03/28/17 19:19:25 - Session: 58dab2b4b02f712a505bd5d3, Info: 55fb0fd145f515a8c56496ef|ddoomchf@medocity.com|DoctorCHF Doom||Medocity MD|||en|undefined|undefined|55fb0d4bc50136479b8cc7d0
+03/28/17 19:19:25 - authentication_v2.MedicalStaffAccess(userId: 55fb0fd145f515a8c56496ef)
+03/28/17 19:19:25 - Patient found in same account as current User.
+03/28/17 19:19:25 - chemotherapy_v2.GetChemo(userId: 5654b688f75e1f981339afeb
+03/28/17 19:19:25 - Patient found in same account as current User.
+03/28/17 19:19:25 - GetCarePlan(User: 5654b688f75e1f981339afeb)
+03/28/17 19:19:25 - Route: [from:23.96.97.233] GET /v2/graph/
+03/28/17 19:19:25 - Session: 58dab2b4b02f712a505bd5d3, Info: 55fb0fd145f515a8c56496ef|ddoomchf@medocity.com|DoctorCHF Doom||Medocity MD|||en|undefined|undefined|55fb0d4bc50136479b8cc7d0
+03/28/17 19:19:25 - authentication_v2.MedicalStaffAccess(userId: 55fb0fd145f515a8c56496ef)
+03/28/17 19:19:25 - Route: [from:23.96.97.233] GET /v2/graph/
+03/28/17 19:19:25 - Session: 58dab2b4b02f712a505bd5d3, Info: 55fb0fd145f515a8c56496ef|ddoomchf@medocity.com|DoctorCHF Doom||Medocity MD|||en|undefined|undefined|55fb0d4bc50136479b8cc7d0
+03/28/17 19:19:25 - authentication_v2.MedicalStaffAccess(userId: 55fb0fd145f515a8c56496ef)
+03/28/17 19:19:25 - Route: [from:23.96.97.233] GET /v2/graph/
+03/28/17 19:19:25 - Session: 58dab2b4b02f712a505bd5d3, Info: 55fb0fd145f515a8c56496ef|ddoomchf@medocity.com|DoctorCHF Doom||Medocity MD|||en|undefined|undefined|55fb0d4bc50136479b8cc7d0
+03/28/17 19:19:25 - authentication_v2.MedicalStaffAccess(userId: 55fb0fd145f515a8c56496ef)
+GET /v2/medicalsummary/doctor/chemo?id=5654b688f75e1f981339afeb 200 557.415 ms - 123
+03/28/17 19:19:25 - Patient found in same account as current User.
+03/28/17 19:19:25 - graph_v2.GetGraphData(userId: 55fb0fd145f515a8c56496ef)
+03/28/17 19:19:25 - query: SELECT DataField, CAST(DataValue as NUMERIC(19,2)) as DataValue, CAST(DataValue as NUMERIC(19,2)) ToolTip, CONVERT(varchar(50), ClientDate, 127) AS ClientDate                 FROM GraphData                 WHERE  UserId='5654b688f75e1f981339afeb' AND ClientDate BETWEEN '2017-02-26 00:00' AND '2017-03-29 00:00'AND DataField !='mood' AND  DataField IN('Oxygen')                ORDER BY FORMAT(ClientDate,'yyyy-MM-dd')
+03/28/17 19:19:25 - Patient found in same account as current User.
+03/28/17 19:19:25 - graph_v2.GetGraphData(userId: 55fb0fd145f515a8c56496ef)
+03/28/17 19:19:25 - query: SELECT DataField, CAST(DataValue as NUMERIC(19,2)) as DataValue, CAST(DataValue as NUMERIC(19,2)) ToolTip, CONVERT(varchar(50), ClientDate, 127) AS ClientDate                 FROM GraphData                 WHERE  UserId='5654b688f75e1f981339afeb' AND ClientDate BETWEEN '2017-02-26 00:00' AND '2017-03-29 00:00'AND DataField !='mood' AND  DataField IN('Bloodpressure_Systolic','Bloodpressure_Diastolic')                ORDER BY FORMAT(ClientDate,'yyyy-MM-dd')
+03/28/17 19:19:25 - Patient found in same account as current User.
+03/28/17 19:19:25 - graph_v2.GetGraphData(userId: 55fb0fd145f515a8c56496ef)
+03/28/17 19:19:25 - query: SELECT DataField, CAST(DataValue as NUMERIC(19,2)) as DataValue, CAST(DataValue as NUMERIC(19,2)) ToolTip, CONVERT(varchar(50), ClientDate, 127) AS ClientDate                 FROM GraphData                 WHERE  UserId='5654b688f75e1f981339afeb' AND ClientDate BETWEEN '2017-02-26 00:00' AND '2017-03-29 00:00'AND DataField !='mood' AND  DataField IN('BloodSugar')                ORDER BY FORMAT(ClientDate,'yyyy-MM-dd')
+03/28/17 19:19:25 -     Goal:Test gial
+03/28/17 19:19:25 -             Task:Test Task
+03/28/17 19:19:25 -     Goal:Eat food
+03/28/17 19:19:25 -             Task:RTTTTTT
+03/28/17 19:19:25 -     Goal:Adhere to prescribed therapies
+03/28/17 19:19:25 -             Task:Obtain and monitor your lab work as ordered and follow up on the results with your physician
+03/28/17 19:19:25 -             Task:Notifiy your physician of all changes in your condition
+03/28/17 19:19:25 -     Goal:Achieve well being/ self care
+03/28/17 19:19:25 -     Goal:Self Management of Medication
+03/28/17 19:19:25 -             Task:Contact your physician immediately if you feel like you are having a side effect (don’t stop taking them without letting your prescriber know)
+03/28/17 19:19:25 -             Task:Keep a written list of your medications (prescription, OTC, and vitamins) in your wallet and in an obvious place for reference.
+03/28/17 19:19:25 -     Goal:Self Management of Medication
+03/28/17 19:19:25 -             Task:Sachin Test Task 1
+03/28/17 19:19:25 -             Task:reorder
+03/28/17 19:19:25 -             Task:Sachin Test Task 1
+03/28/17 19:19:25 -             Task:Understand how your medications work, how to take them, and what side effects to be aware of
+03/28/17 19:19:25 - Loading Doctor Comments: 140 of them
+GET /v2/medicalsummary/careplan/?id=5654b688f75e1f981339afeb 200 1275.785 ms - 9122
+03/28/17 19:19:26 - Token :
+GET /v2/medicalsummary/patient/pdf?id=5654b688f75e1f981339afeb&unit=standard 200 4566.198 ms - 296
+03/28/17 19:19:26 - output: {"oxygen":[]}
+03/28/17 19:19:26 - output: {"bloodpressure_systolic":[],"bloodpressure_diastolic":[]}
+03/28/17 19:19:26 - output: {"bloodsugar":[]}
+GET /v2/graph/?id=5654b688f75e1f981339afeb&end=2017-03-28&fields%5B%5D=%5B%22Oxygen%22%5D&start=02-26-2017 200 1283.409 ms - 296
+GET /v2/graph/?id=5654b688f75e1f981339afeb&end=2017-03-28&fields%5B%5D=%5B%22Bloodpressure_Systolic%22,%22Bloodpressure_Diastolic%22%5D&start=02-26-2017 200 1290.240 ms - 212
+GET /v2/graph/?id=5654b688f75e1f981339afeb&end=2017-03-28&fields%5B%5D=%5B%22BloodSugar%22%5D&start=02-26-2017 200 1296.142 ms - 107
+
